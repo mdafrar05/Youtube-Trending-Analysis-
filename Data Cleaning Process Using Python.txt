@@ -1,0 +1,41 @@
+Data Cleaning Process Using Python
+The raw YouTube trending dataset contained several inconsistencies, redundant columns, and improperly formatted data which needed to be cleaned before performing any kind of analysis or visualization. The data cleaning was done using Python, primarily with the Pandas library. Below are the detailed steps followed:
+
+✅ 1. Importing the Dataset
+The dataset was loaded into a Pandas DataFrame. This provided a tabular structure to work efficiently with rows and columns of data.
+
+✅ 2. Removing Unnecessary Columns
+Certain columns such as index and video_error_or_removed were found to be irrelevant for analysis. These were removed to simplify the dataset and focus only on meaningful attributes.
+
+✅ 3. Date Formatting
+The dataset contained two date columns: trending_date and publish_date, which were in different and inconsistent formats.
+
+The trending_date field followed a YY.DD.MM format and was converted to a standard date format using datetime parsing.
+
+The publish_date was also cleaned, and only the date part (without time) was retained to maintain uniformity and simplify time-based analysis.
+
+✅ 4. Cleaning the Tags Column
+The tags column included placeholder values like [none] which had no analytical value.
+
+These were replaced with blank strings, and missing values were also handled by filling them with empty strings to avoid null errors during analysis.
+
+✅ 5. Handling Missing Values
+To ensure data reliability, rows missing essential fields like title or views were dropped. These are crucial for identifying and measuring the popularity of a video, and their absence could skew insights.
+
+✅ 6. Ensuring Correct Data Types
+Some of the numerical columns, including views, likes, dislikes, and comment_count, were in incorrect formats or contained non-numeric entries.
+
+These columns were forcefully converted to numeric data types to ensure they could be used in calculations, filters, and visualizations without causing errors.
+
+✅ 7. Creating a New Feature – trending_days , sentiments via tags
+To derive deeper insights, a new feature was engineered:
+
+The total number of unique days each video appeared on the trending list (trending_days) was calculated using group-wise operations.
+
+This new column was added to help understand video consistency and popularity over time, rather than just single-day metrics.
+
+✅ 8. Exporting the Cleaned Dataset
+Once all cleaning operations were complete, the final cleaned dataset was exported into a new CSV file. This version was then used for analysis and dashboard creation in Power BI.
+
+📌 Final Note:
+This data cleaning process ensured that the dataset was consistent, accurate, and ready for meaningful visual exploration. Proper data hygiene is essential to avoid misleading conclusions, and this step laid the foundation for all further analysis.
