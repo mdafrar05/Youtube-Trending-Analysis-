@@ -1,10 +1,15 @@
 # 📊 YouTube Trending Analytics
 
+### 📊 Download Power BI File
+[📥 YouTube_Trending_Analysis.pbix (Google Drive)](https://drive.google.com/file/d/13aq_LMe7H65aGQYkIzmii6QoEmQhzAfX/view?usp=sharing)
+
 This project explores YouTube trending videos using a rich dataset and a comprehensive Power BI report. It provides actionable insights into trending patterns, viewer sentiment, engagement behavior, and regional differences. It is designed to assist content creators, analysts, and marketers in making data-driven decisions for improving YouTube performance.
 
 ---
 
 ## 📁 Dataset
+
+- [Download Dataset (Google Drive)](https://drive.google.com/file/d/1Vgx2PUBK10BoGh3Ig07zveoi_F7KPH6C/view?usp=sharing)
 
 The dataset used contains detailed metadata of over **160,000 trending YouTube videos**. It includes:
 
